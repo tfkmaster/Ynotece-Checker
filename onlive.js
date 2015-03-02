@@ -6,7 +6,7 @@ function YnoCheck()
 	request.send(null);
 
 	var response = JSON.parse(request.responseText);
-	if (response.list[0].broadcasting == true)
+	if (response.list[0].broadcasting == true && response.list[0].onair == true)
 	{
 		document.getElementById("result").innerHTML = "♥~ PUTAIN OUAIS ELLE LIVE ! ~♥";
 		document.getElementById("result").style.color = "#0F0";
