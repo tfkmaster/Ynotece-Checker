@@ -1,0 +1,122 @@
+/* RESET \o/ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*-----------------------------
+ CLASS ELEMENTS CUSTOMISATION 
+-----------------------------*/
+
+.rainbow
+{
+	animation: yolo 5s steps(1);
+    animation-iteration-count: infinite;
+	-moz-animation: yolo 5s steps(1);
+    -moz-animation-iteration-count: infinite;
+	-webkit-animation: yolo 5s steps(1);
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes yolo {
+    0% {color: #ff0000;}
+    20% {color: #00ff00;}
+    40% {color: #ff00ff;}
+    60% {color: #00ffff;}
+    80% {color: #ffff00;}
+    100% {color: #ff0000;}
+}
+
+@keyframes yolo {
+    0% {color: #ff0000;}
+    20% {color: #00ff00;}
+    40% {color: #ff00ff;}
+    60% {color: #00ffff;}
+    80% {color: #ffff00;}
+    100% {color: #ff0000;}
+}
+
+
+/*-----------------------------
+ GENERIC ELEMENTS CUSTOMISATION 
+-----------------------------*/
+
+html 
+{
+    position: relative;
+    min-height: 100%;
+}
+
+body 
+{
+    margin: 0 0 96px; /* bottom = footer height */
+    background-color: black;
+	color: #FFF;
+	font-size: 100%;
+}
+
+header
+{
+	text-align: center;
+	background-color: #000000;
+	font-family: "Trebuchet MS", monospace;
+}
+
+header h1
+{
+	font-size: 42px;
+	font-weight: 700;
+    padding: 24px;
+    border-bottom: 1px solid gray;
+}
+
+nav
+{
+	padding: 16px;
+	margin: 8px 0px;
+}
+
+nav ul li
+{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	font-weight: 600;
+	color: #0FF;
+}
+
+main
+{
+	text-align: center;
+	font-family: "Trebuchet MS", sans-serif;
+    width: 100%;
+    padding-top: 24px;
+}
+
+footer 
+{
+    position: absolute;
+    bottom: 0;
+    height: 64px;
+    line-height: 64px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Trebuchet MS", monospace;
+    background-color: black;
+    border-top: 1px solid gray;
+}
+
+p#result
+{
+	font-size: 48px;
+    font-weight: 800;
+}
+
+#s1, #s2, #s3, #s4
+{
+    display: none;
+    margin: 0px 16px;
+}
