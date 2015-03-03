@@ -2,7 +2,7 @@ function YnoCheck()
 {
 
 	var request = new XMLHttpRequest();
-	request.open("GET", "https://api.dailymotion.com/user/Ynotece/videos?fields=broadcasting,onair", false);
+	request.open("GET", "https://api.dailymotion.com/user/Ynotece/videos?fields=broadcasting,onair?timestamp=" + new Date().getTime(), false);
 	request.send(null);
 
 	var response = JSON.parse(request.responseText);
